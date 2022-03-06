@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Filiere</title>
+    <link rel="stylesheet" href="../../../css/style/stylehtml.css">
+</head>
+<body>
+    <div class="conteneur">
+        <div class="verticale">
+            <div class="admin">
+                <div class="photo">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div class="identifiant">
+                    <p>MAMADOU Aniss<br>administrateur</p>
+                </div>
+            </div>
+            <ul class="navigationVerticale">
+                <a href="..\etudiant\indexEleve.html"><li>ELEVE</li></a>
+                <a id="prime" href="#"><li>FILIERE</li></a>
+                <a href="..\personnel\indexPersonel.html"><li>PERSONNEL</li></a>
+            </ul>
+        </div>
+        <div class="horizontale">
+                <div class="navigationHaut">
+                    <ul>
+                        <a id="primes" href="#"><li>LISTE</li></a>
+                        <a href="planning.html"><li>PLANNING</li></a>
+                        <a href="matiere.html"><li>MATIRER</li></a>
+                    </ul>
+                </div>
+        </div> 
+    </div>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" > </script>
+    <script>
+        var ongl=document.getElementById('prime');
+        ongl.className="animation";
+        var ongls=document.getElementById('primes');
+        ongls.className="animationH";
+    </script>
+</body>
+</html>

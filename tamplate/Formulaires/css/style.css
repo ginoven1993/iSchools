@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+.form_container{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+
+form{
+    background: #ffffff;
+    padding: 3em;
+}
+form h1{
+    font-size: 2.3em;
+    text-transform: uppercase;
+    color: #747cdf;
+    text-align: center;
+}
+
+form .separator{
+    width: 100%;
+    height: 0.0625em;
+    background: #747cdf;
+}
+
+form.form_1 .form_body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2.5em;
+}
+form.form_2 .form_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .form_body .field{
+    position: relative;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.form_2 .form_body .center .group,
+.form_1 .form_body .right .group{
+    width: 100%;
+    margin: 0.7em 0;
+    display: flex;
+    align-items: center;
+}
+.form_2 .form_body .center .group{
+    flex-direction: column;
+}
+.form_2 .form_body .center .group .field,
+.form_1 .form_body .right .group .field{
+    margin: 0.7em 0.5em;
+    width: 100%;
+}
+.form_2 .form_body .center .field input,
+.form_1 .form_body .right .field select,
+.form_1 .form_body .right .field input{
+    margin-top: 0.7em;
+    padding: 0.5em 0.3em 0.5em 2em;
+    border: 1px solid #c9c9c9;
+    border-radius: 0.08em;
+    outline-color: #747cdf;
+}
+.form_2 .form_body .center .field i,
+.form_1 .form_body .right .field i{
+    position: absolute;
+    left: 0;
+    top: 2.2em;
+    padding: 0.2em 0.3em;
+    color: #747cdf;
+}
+.form_1 .form_body .left{
+    margin-right: 5em;
+}
+.form_1 .form_body .left .field{
+    height: 100%;
+}
+.form_1 .form_body .left .field #display_image{
+    width: 10em;
+    height: 10em;
+    margin-top: 0.7em;
+    background: center center/cover;
+    border: 0.02em solid #747cdf;
+    border-radius: 0.08em;
+}
+.form_1 .form_body .left .field #display_image img{
+    width: 100%;
+    height: 100%;
+}
+.form_1 .form_body .left .field input{
+    margin-top: 0.7em;
+    color: transparent;
+    width: 8.5em;
+}
+
+form .form_footer{
+    margin: 0.3em 0.7em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+form .form_footer button{
+    margin:0.7em;
+    background: #747cdf;
+    color: #ffffff;
+    font-size: 0.9em;
+    padding: 0.7em 2em;
+    border: none;
+    border-radius: 0.08em;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form .form_footer button:hover{
+    transform: scale(1.05);
+    background: #595faf;
+}
+
+
+
+.infos label{
+    font-size: 0.9em;
+    color: #c9c9c9;
+}
+.infos .form_body .right .field p,
+.infos .form_body .center .field p{
+    position: relative;
+    width: 25em;
+    margin-top: 0.7em;
+    padding: 0.5em 0.3em 0.5em 2em;
+    border-bottom: 1px solid #c9c9c9;
+    cursor: pointer;
+}
+.infos .form_body .right .field p,
+.infos .form_body .center .field p:hover{
+    border-bottom: 1px solid #595faf;
+}
+.infos .form_body .right .field i,
+.infos .form_body .center .field i{
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+    padding: 0.2em 0.3em;
+    color: #747cdf;
+}
+@media screen and (max-width : 1680px) {
+    .infos .form_body .right .field p,
+    .infos .form_body .center .field p{
+        width: 12.5em;
+    }
+}
+@media screen and (max-width : 1581px) {
+    .form_1 .form_body .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width : 1436px) {
+    .form_1 .form_body .left{
+        width: 100%;
+        margin: 0;
+    }
+    .form_1 .form_body .left .field{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}
+@media screen and (max-width : 980px) {
+    form{
+        padding: 1.5em;
+    }
+    form.form_2 .form_body,
+    form.form_1 .form_body{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        flex-direction: column;
+        align-content: stretch;
+    }
+    form.form_2 .form_body .center .group,
+    .form_1 .form_body .right .group{
+        margin: 0.7em 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        flex-direction: column;
+        align-content: stretch;
+    }
+    form.form_2 .form_body .center .group .field,
+    .form_1 .form_body .right .group .field{
+        margin: 0.7em 0;
+    }
+    .infos .form_body .right .field p,
+    .infos .form_body .center .field p{
+        width: 90%;
+    }
+}
+@media screen and (max-width : 848px) {
+    form h1{
+        font-size: 1.9em;
+    }
+    .form_1 .form_body{
+        align-items: normal;
+    }
+    .form_1 .form_body .left{
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form .form_footer .group{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width : 490px) {
+    form{
+        padding: 1.095em;
+    }
+    form h1{
+        font-size: 1.5em;
+    }
+    form label{
+        font-size: 0.95em;
+    }
+}
